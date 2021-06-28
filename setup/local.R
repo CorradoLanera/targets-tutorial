@@ -19,8 +19,8 @@ install.packages(c(
   "visNetwork",
   "yardstick"
 ))
-remotes::install_github("rstudio/reticulate")
-remotes::install_github("ropensci/targets")
-remotes::install_github("ropensci/tarchetypes")
+renv::install("rstudio/reticulate")
+renv::install("ropensci/targets")
+renv::install("ropensci/tarchetypes")
 reticulate::install_miniconda()
 keras::install_keras()
