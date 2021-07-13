@@ -73,7 +73,7 @@ C. Targets directly downstream need to mention the symbol `churn_file` (as oppos
 D. All the above.
 
 ```{r}
-answer4_review("E")
+answer4_review("d")
 ```
 
 Hint:
@@ -128,7 +128,7 @@ C. A data frame of correlations.
 D. A function called `churn_cor()`.
 
 ```{r}
-answer4_return("E")
+answer4_return("a")
 ```
 
 Take a look at the new output file `cor.png`. You should see a plot of each variable's correlation with customer churn. Also glance at `cor.csv`, the output dataset with the correlations.
@@ -141,6 +141,7 @@ Now, delete one of the output files and rerun the pipeline.
 
 ```{r}
 tmp <- file.remove("cor.png")
+tar_visnetwork()
 tar_make()
 ```
 
@@ -152,7 +153,7 @@ C. Because `churn_cor` is a correctly configured file target, `tar_make()` notic
 D. `churn_cor` because `targets` always treats character strings as file names.
 
 ```{r}
-answer4_delete("E")
+answer4_delete("C")
 ```
 
 Whenever a single target like `churn_cor` tracks multiple files or directories, `tar_make()` treats all those files as a single unit. The whole target invalidates when one of the files changes, and downstream targets must accept all the files together. When we come to the chapter on branching, we will use the special `tar_files()` function from the `tarchetypes` package to branch over the available files.
@@ -221,7 +222,7 @@ C. `run_sigmoid` because the report calls `tar_load(run_sigmoid)` in an active c
 D. `run_relu` and `run_sigmoid` because the report calls `tar_read(run_relu)` and `tar_load(run_sigmoid)` in active code chunks.
 
 ```{r}
-answer4_deps1("E")
+answer4_deps1("D")
 ```
 
 ## Add a dependency

@@ -45,7 +45,7 @@ C. The full pipeline from `2-pipelines.Rmd` at the very bottom of the file.
 D. All the above.
 
 ```{r}
-answer3_setup("E") # Supply your own answer here.
+answer3_setup("D") # Supply your own answer here.
 ```
 
 # First target

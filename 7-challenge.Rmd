@@ -39,3 +39,48 @@ tar_edit()
 ```
 
 One possible solution is at the bottom of `7-challenge/solution_targets.R`.
+
+
+
+
+
+
+
+
+
+
+
+
+```{r}
+tar_visnetwork()
+```
+
+
+```{r}
+if (is.null(tar_validate())) {
+  tar_make()
+}
+```
+
+```{r}
+tar_read("run_softmax")
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
